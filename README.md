@@ -1,4 +1,5 @@
 # Treino4
+
 CREATE DATABASE  IF NOT EXISTS `ligacem` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `ligacem`;
 -- MySQL dump 10.13  Distrib 8.0.20, for Win64 (x86_64)
@@ -163,8 +164,11 @@ CREATE TABLE `técnico` (
   `esporte` varchar(30) DEFAULT NULL,
   `telefone` varchar(17) DEFAULT NULL,
   `banco` varchar(30) DEFAULT NULL,
+  `agencia` varchar(9) DEFAULT NULL,
   `conta_deposito` varchar(30) NOT NULL,
   `data_de_contratacao` date NOT NULL,
+  `ult_atualizacao_salarial` date DEFAULT NULL,
+  `sal_atual` float DEFAULT NULL,
   `idusuarios` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `conta_deposito` (`conta_deposito`),
