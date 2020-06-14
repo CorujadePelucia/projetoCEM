@@ -1,2 +1,2 @@
 # Treino4
-Treino 4, quero chorar
+Treino 4, ta osso
