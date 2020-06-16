@@ -201,6 +201,44 @@ CREATE TABLE `usuarios` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
+
+DROP TABLE IF EXISTS `vendas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `vendas` (
+  `id` int(11) NOT NULL,
+  `data_venda` date DEFAULT NULL,
+  `id_cliente` int(11) DEFAULT NULL,
+  `id_produto` int(11) DEFAULT NULL,
+  `quantidade` float DEFAULT NULL,
+  `valor` float DEFAULT NULL,
+  `usuario` int(11) DEFAULT NULL,
+  `cond_pagamento` enum('dinheiro','transferencia','débito','crédito') DEFAULT NULL,
+  `comprovante` enum('sim','nao') DEFAULT NULL,
+  `aprovador` int(11) DEFAULT NULL,
+  `aprovacao` enum('sim','não','em análise') DEFAULT NULL,
+  `data_aprovacao` date DEFAULT NULL,
+  `observacao` longtext,
+  `finalizacao` enum('1','0') DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_cliente` (`id_cliente`),
+  KEY `id_produto` (`id_produto`),
+  KEY `usuario` (`usuario`),
+  KEY `aprovador` (`aprovador`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `vendas`
+--
+
+LOCK TABLES `vendas` WRITE;
+/*!40000 ALTER TABLE `vendas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `vendas` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
