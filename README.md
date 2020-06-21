@@ -1,4 +1,4 @@
-# Treino4
+# SQL
 CREATE DATABASE  IF NOT EXISTS `ligacem` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `ligacem`;
 -- MySQL dump 10.13  Distrib 8.0.20, for Win64 (x86_64)
