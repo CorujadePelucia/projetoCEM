@@ -1,4 +1,4 @@
-# SQL
+# SQL em txt mudança
 CREATE DATABASE  IF NOT EXISTS `ligacem` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `ligacem`;
 -- MySQL dump 10.13  Distrib 8.0.20, for Win64 (x86_64)
@@ -248,5 +248,3 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2020-06-14 15:25:11
-
-
