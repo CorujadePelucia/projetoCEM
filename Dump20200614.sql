@@ -74,7 +74,7 @@ CREATE TABLE `contas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) NOT NULL,
   `natureza` varchar(9) DEFAULT NULL,
-  `id_usuarios` int(11) DEFAULT NULL,
+  `idusuarios` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idusuarios` (`idusuarios`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
