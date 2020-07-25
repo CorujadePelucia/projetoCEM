@@ -36,6 +36,15 @@ LOCK TABLES `clientes` WRITE;
 UNLOCK TABLES;
 
 --
+-- Dumping data for table `compras`
+--
+
+LOCK TABLES `compras` WRITE;
+/*!40000 ALTER TABLE `compras` DISABLE KEYS */;
+/*!40000 ALTER TABLE `compras` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping data for table `fornecedor`
 --
 
@@ -51,6 +60,15 @@ UNLOCK TABLES;
 LOCK TABLES `imobilizados` WRITE;
 /*!40000 ALTER TABLE `imobilizados` DISABLE KEYS */;
 /*!40000 ALTER TABLE `imobilizados` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `preços`
+--
+
+LOCK TABLES `preços` WRITE;
+/*!40000 ALTER TABLE `preços` DISABLE KEYS */;
+/*!40000 ALTER TABLE `preços` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -98,4 +116,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-17 23:26:59
+-- Dump completed on 2020-07-25 20:07:43
